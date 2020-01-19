@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".postaction.AddPostActivity"
+    >
+
+    <include
+        android:id="@+id/toolbarAdd"
+        layout="@layout/app_bar_layout"
+        />
+
+    <ImageView
+        android:id="@+id/img_back"
+        android:layout_width="@dimen/auto_dp_56"
+        android:layout_height="@dimen/auto_dp_56"
+        android:src="@drawable/ic_back"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:padding="@dimen/auto_dp_16"
+        android:scaleType="fitXY"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="marquee"
+        android:gravity="center"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/auto_sp_16"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/auto_dp_16"
+        tools:text="Title"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbarAdd"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/auto_dp_2"
+            android:orientation="vertical"
+            >
+
+            <EditText
+                android:id="@+id/pDescriptionEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/auto_dp_10"
+                android:background="@drawable/inputs"
+                android:ems="10"
+                android:gravity="start|top"
+                android:hint="Hãy chia sẻ hoạt động của bạn..."
+                android:inputType="textMultiLine"
+                android:minHeight="@dimen/auto_dp_96"
+                android:padding="@dimen/auto_dp_8"
+                android:singleLine="true"
+                android:textSize="@dimen/auto_sp_14"
+                tools:ignore="Autofill,HardcodedText"
+                tools:text=""
+                />
+
+            <ImageView
+                android:id="@+id/pImageIv"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/auto_dp_300"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/select_image"
+                tools:ignore="ContentDescription"
+                />
+
+            <Button
+                android:id="@+id/pUploadBtn"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/auto_dp_40"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/auto_dp_20"
+                android:layout_marginTop="@dimen/auto_dp_20"
+                android:layout_marginRight="@dimen/auto_dp_20"
+                android:background="@drawable/shape_blue_border"
+                android:text="@string/post_action"
+                android:textColor="@color/white"
+                android:textSize="@dimen/auto_sp_14"
+                tools:ignore="HardcodedText,RtlHardcoded"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

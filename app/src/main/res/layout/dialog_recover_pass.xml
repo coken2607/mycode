@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="onClickCancel"
+            type="android.view.View.OnClickListener" />
+
+        <variable
+            name="onClickRecover"
+            type="android.view.View.OnClickListener" />
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_white_border"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/auto_dp_5"
+            android:paddingLeft="@dimen/auto_dp_24"
+            android:paddingTop="@dimen/auto_dp_24"
+            android:textColor="@color/text_color_3"
+            android:text="@string/recover_password"
+            android:textSize="@dimen/auto_sp_16"
+            android:textStyle="bold"
+            tools:ignore="RtlHardcoded,RtlSymmetry,UnusedAttribute"
+            />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/auto_dp_5"
+            android:padding="@dimen/auto_dp_4"
+            android:textSize="@dimen/auto_sp_14">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/emailEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_email"
+                android:textColor="@color/text_color_3"
+                android:textSize="@dimen/auto_sp_14"
+                tools:text="kientran26070809@gmail.com" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/auto_dp_10"
+            android:layout_marginBottom="@dimen/auto_dp_10"
+            android:gravity="right"
+            android:orientation="horizontal"
+            tools:ignore="RtlHardcoded">
+
+            <TextView
+                android:id="@+id/cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/auto_dp_10"
+                android:layout_marginRight="@dimen/auto_dp_10"
+                android:background="?attr/selectableItemBackground"
+                android:onClick="@{onClickCancel}"
+                android:padding="@dimen/auto_dp_10"
+                android:text="@string/cancel"
+                android:textColor="@color/brown_grey"
+                android:textSize="@dimen/auto_sp_14"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:id="@+id/recover"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/auto_dp_16"
+                android:layout_marginRight="@dimen/auto_dp_16"
+                android:background="?attr/selectableItemBackground"
+                android:onClick="@{onClickRecover}"
+                android:padding="@dimen/auto_dp_10"
+                android:text="@string/recover"
+                android:textColor="@color/lite_blue"
+                android:textSize="@dimen/auto_sp_14"
+                tools:ignore="UnusedAttribute" />
+        </LinearLayout>
+    </LinearLayout>
+</layout>

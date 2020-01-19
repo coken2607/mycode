@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F1EDED"
+    tools:context=".setting.SettingActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/app_bar_layout"/>
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="@dimen/auto_dp_56"
+            android:layout_height="@dimen/auto_dp_56"
+            android:src="@drawable/ic_back"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:padding="@dimen/auto_dp_16"
+            android:scaleType="fitXY"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:gravity="center"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/auto_sp_16"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/auto_dp_18"
+            tools:text="Title"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:id="@+id/layout_post"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:ignore="UseCompoundDrawables"
+            >
+
+            <ImageView
+                android:layout_width="@dimen/auto_dp_24"
+                android:layout_height="@dimen/auto_dp_24"
+                android:background="@drawable/ic_album"
+                android:layout_gravity="center"
+                android:padding="@dimen/auto_dp_10"
+                android:layout_marginStart="@dimen/auto_sp_10"
+                tools:ignore="ContentDescription"
+                />
+
+            <TextView
+                android:id="@+id/post"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/auto_sp_10"
+                android:text="@string/post_action"
+                android:drawablePadding="@dimen/auto_dp_20"
+                android:textColor="@color/text_color_3"
+                android:textSize="@dimen/auto_sp_14"
+                />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/auto_dp_0_1"
+            android:background="@color/colorAccent"
+            android:layout_marginStart="@dimen/auto_dp_50"/>
+
+        <LinearLayout
+            android:id="@+id/layout_logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:ignore="UseCompoundDrawables"
+            >
+
+            <ImageView
+                android:layout_width="@dimen/auto_dp_24"
+                android:layout_height="@dimen/auto_dp_24"
+                android:background="@drawable/logout"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/auto_dp_10"
+                tools:ignore="ContentDescription"
+                />
+
+            <TextView
+                android:id="@+id/logout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/auto_sp_10"
+                android:text="@string/logout"
+                android:drawablePadding="@dimen/auto_dp_20"
+                android:textColor="@color/text_color_3"
+                android:textSize="@dimen/auto_sp_14"
+                />
+
+        </LinearLayout>
+
+
+
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

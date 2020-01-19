@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:ignore="UselessParent"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/auto_dp_0"
+            android:background="@drawable/background_gradient"
+            android:layout_weight="1"
+            tools:ignore="ContentDescription"
+            />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/auto_dp_0"
+            android:layout_weight="1"
+            android:background="#F1EDED"
+            tools:ignore="ContentDescription"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/auto_dp_20"
+        android:layout_marginLeft="@dimen/auto_dp_20"
+        android:orientation="vertical"
+        android:padding="@dimen/auto_dp_20"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/register"
+            android:gravity="center"
+            android:textAllCaps="true"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="@color/cam2"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/auto_dp_4"
+            android:textSize="@dimen/auto_sp_14"
+            android:layout_marginTop="@dimen/auto_dp_30"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/emailEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_email"
+                android:textColor="@color/text_color_3"
+                android:textSize="@dimen/auto_sp_14"
+                tools:text="kientran26070809@gmail.com"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/auto_dp_4"
+            android:textSize="@dimen/auto_sp_14"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/passwordEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/password"
+                android:textColor="@color/text_color_3"
+                android:textSize="@dimen/auto_sp_14"
+                tools:text="123****"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <Button
+            android:id="@+id/registerBtn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/auto_dp_40"
+            android:layout_marginTop="@dimen/auto_dp_30"
+            android:background="@drawable/shape_blue_border"
+            android:padding="@dimen/auto_dp_4"
+            android:text="@string/register"
+            android:textColor="@android:color/background_light"
+            android:textSize="@dimen/auto_sp_14"
+            tools:ignore="HardcodedText"
+            />
+
+        <TextView
+            android:id="@+id/have_accountTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_color_3"
+            android:textAlignment="center"
+            android:layout_marginTop="@dimen/auto_dp_10"
+            android:text="@string/question_login"/>
+
+    </LinearLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="@dimen/auto_dp_100"
+        android:layout_height="@dimen/auto_dp_100"
+        android:background="@drawable/logo2"
+        android:layout_marginTop="@dimen/auto_dp_30"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="@dimen/auto_dp_56"
+        android:layout_height="@dimen/auto_dp_56"
+        android:padding="@dimen/auto_dp_16"
+        android:scaleType="fitXY"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/ic_back"
+        tools:ignore="ContentDescription"
+        />
+
+</RelativeLayout>

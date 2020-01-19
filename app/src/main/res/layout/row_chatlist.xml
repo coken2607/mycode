@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="@dimen/auto_dp_2"
+    app:cardElevation="@dimen/auto_dp_2"
+    app:cardBackgroundColor="@color/white"
+    app:contentPadding="@dimen/auto_dp_3"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profileIv"
+                android:layout_width="@dimen/auto_dp_48"
+                android:layout_height="@dimen/auto_dp_48"
+                android:src="@drawable/bg_avatar"
+                />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/onlineStatusIv"
+                android:layout_width="@dimen/auto_dp_14"
+                android:layout_height="@dimen/auto_dp_14"
+                android:layout_marginStart="@dimen/auto_dp_35"
+                android:layout_marginTop="@dimen/auto_dp_30"
+                android:src="@drawable/circle_online"
+                />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/nameTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/auto_dp_10"
+                android:text="@string/name"
+                android:textColor="@color/black"
+                android:textSize="@dimen/auto_sp_16"
+                />
+
+            <TextView
+                android:id="@+id/lastMessageTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/auto_sp_10"
+                android:maxLines="2"
+                android:text="hi chào cả nhà nhé"
+                android:textSize="@dimen/auto_sp_12"
+                tools:ignore="HardcodedText"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

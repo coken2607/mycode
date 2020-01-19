@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ff359ff2</color>
+    <color name="colorPrimaryDark">#ff359ff2</color>
+    <color name="colorAccent">#E6E6E6</color>
+    <color name="lite_blue">#ff359ff2</color>
+    <color name="lblyellow">#FF5722</color>
+    <color name="indicator">#FF5722</color>
+    <color name="white">#FFFFFF</color>
+    <color name="txtblue">#0072c6</color>
+    <color name="black">#000</color>
+    <color name="view_line">#cccccc</color>
+    <color name="brown_grey">#858585</color>
+    <color name="text_color_3">#343434</color>
+    <color name="stroke">#cccccc</color>
+    <color name="text_hint_color">#f2f2f2</color>
+    <color name="tag_view">#e1e1e1</color>
+    <color name="text_color_tag">#4a4a4a</color>
+    <color name="text_color_cate">#232323</color>
+    <color name="bg_cate">#FFE7E7E7</color>
+    <color name="text_color_comment">#333333</color>
+    <color name="user_name_comment">#666666</color>
+    <color name="action_comment">#104a78</color>
+    <color name="bg_cm_default">#FFF3F3F3</color>
+    <color name="bg_news_detail">#BFFFFFFF</color>
+    <color name="tint_color">#9A000000</color>
+    <color name="gray_300">#e0e0e0</color>
+    <color name="colorPri">#008CE0</color>
+    <color name="cam2">#31d22e</color>
+</resources>

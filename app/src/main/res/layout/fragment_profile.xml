@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1EDED"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView
+                android:id="@+id/coverIv"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/auto_dp_180"
+                android:scaleType="fitXY"
+                android:background="@drawable/bgcover"
+                tools:ignore="ContentDescription">
+
+            </ImageView>
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/auto_dp_100"
+                android:layout_marginTop="@dimen/auto_dp_120"
+                android:orientation="horizontal"
+                >
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/avatarIv"
+                    android:layout_width="@dimen/auto_dp_100"
+                    android:layout_height="@dimen/auto_dp_100"
+                    android:layout_marginStart="@dimen/auto_dp_20"
+                    android:layout_marginLeft="@dimen/auto_dp_20"
+                    android:padding="@dimen/auto_dp_5"
+                    android:src="@drawable/profile_image"
+                    tools:ignore="RtlHardcoded" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:id="@+id/nameTv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/auto_dp_5"
+                        android:layout_marginLeft="@dimen/auto_dp_5"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/auto_sp_16"
+                        tools:ignore="RtlHardcoded" />
+
+                    <TextView
+                        android:id="@+id/emailTv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/auto_dp_5"
+                        android:layout_marginLeft="@dimen/auto_dp_5"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/auto_sp_12"
+                        tools:ignore="RtlHardcoded" />
+
+                    <TextView
+                        android:id="@+id/phoneTv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/auto_dp_5"
+                        android:layout_marginLeft="@dimen/auto_dp_5"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/auto_sp_12"
+                        tools:ignore="RtlHardcoded" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView_posts"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/linearLayout"/>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/auto_dp_10"
+        android:background="@color/lite_blue"
+        android:src="@drawable/ic_edit_white"
+        tools:ignore="RtlHardcoded"
+        />
+</RelativeLayout>

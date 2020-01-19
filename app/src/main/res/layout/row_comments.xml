@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/auto_dp_1"
+    app:cardBackgroundColor="@color/white"
+    app:contentPadding="@dimen/auto_dp_2"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/avatarIv"
+            android:layout_width="@dimen/auto_dp_35"
+            android:layout_height="@dimen/auto_dp_35"
+            android:layout_marginEnd="@dimen/auto_dp_5"
+            android:layout_marginRight="@dimen/auto_dp_5"
+            android:src="@drawable/bg_avatar"
+            tools:ignore="RtlHardcoded"
+            />
+
+        <TextView
+            android:id="@+id/nameTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/avatarIv"
+            android:text="@string/name"
+            android:textSize="@dimen/auto_sp_14"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/commentTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nameTv"
+            android:layout_toEndOf="@+id/avatarIv"
+            android:text="Bạn có cái ảnh đẹp thế"
+            android:textSize="@dimen/auto_sp_12"
+            android:textColor="@color/black"
+            tools:ignore="HardcodedText"
+            />
+
+        <TextView
+            android:id="@+id/timeTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9/11/2019"
+            android:layout_below="@+id/commentTv"
+            android:layout_toEndOf="@+id/avatarIv"
+            android:textSize="@dimen/auto_sp_10"
+            tools:ignore="HardcodedText"
+            />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

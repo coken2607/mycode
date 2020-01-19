@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "239351538313",
+    "firebase_url": "https://datn-project.firebaseio.com",
+    "project_id": "datn-project",
+    "storage_bucket": "datn-project.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:239351538313:android:b4dc6172481bc9b269dc58",
+        "android_client_info": {
+          "package_name": "com.example.atn"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "239351538313-2ns2ve1bbd44cbtr9e18ficpor9qo6sf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.atn",
+            "certificate_hash": "ea5e5767b706d0c6d100e7468372655a50e9bb8f"
+          }
+        },
+        {
+          "client_id": "239351538313-jdvmnun71fj8mnmf8v65vr81ppa5d9st.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCWbg3SX-pjLZrzyGF_Fp3SNFwkcVGQ9XE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "239351538313-jdvmnun71fj8mnmf8v65vr81ppa5d9st.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

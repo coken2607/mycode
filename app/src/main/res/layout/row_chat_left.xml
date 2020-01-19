@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/messageLayout"
+    android:padding="@dimen/auto_dp_10"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profileIv"
+            android:layout_width="@dimen/auto_dp_35"
+            android:layout_height="@dimen/auto_dp_35"
+            android:src="@drawable/profile_image"
+            app:civ_border_color="@null"
+            />
+
+        <TextView
+            android:id="@+id/messageTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_receiver"
+            android:padding="@dimen/auto_dp_10"
+            android:text="@string/hello"
+            android:textColor="@color/black"
+            android:textSize="@dimen/auto_sp_14"
+            tools:ignore="InefficientWeight" />
+
+        <TextView
+            android:id="@+id/timeTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/custom_time"
+            android:textColor="@color/white"
+            android:textSize="@dimen/auto_sp_10"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/isSeenTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:text="@string/seen"
+        android:textAlignment="textEnd"
+        android:visibility="gone"
+        />
+
+
+</LinearLayout>
